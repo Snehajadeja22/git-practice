@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+.currency_field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.currency_field::before {
+  content: "$";
+  position: absolute;
+  left: 10px;
+  background: #e5e7eb; /* Light gray background */
+  padding: 6px 10px;
+  border-radius: 5px 0 0 5px;
+  color: #4b5563; /* Gray text color */
+  color: red;
+  font-size: 14px;
+}
+.currency_field input {
+  padding-left: 40px; /* Ensure space for the $ box */
+}
